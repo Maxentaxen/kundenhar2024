@@ -1,6 +1,11 @@
 * {
     --turquoise: #1ABC9C;
-    --darker: #5D9D8B;
-    --white: #e5fff7;
-    --textcolor: #F3EADA;   
+    --black: #202c39;
+    --white: #f2f4f3;
+    --gray: #37485d;
+    -lightblue: #27efc7;   
+   }
+
+   body {
+    background-color: var(--black);
    }
