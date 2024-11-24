@@ -4,8 +4,10 @@
     --white: #f2f4f3;
     --gray: #37485d;
     -lightblue: #27efc7;   
-   }
+}
 
-   body {
+
+body {
     background-color: var(--black);
-   }
+}
+
