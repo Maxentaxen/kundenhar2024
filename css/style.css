@@ -48,7 +48,7 @@ body {
     border-radius: 20px;
     border: 2px solid var(--turquoise);
     display: grid;
-    z-index: 1;
+    z-index: 2;
     grid-template-columns: 80% 20%;
     grid-template-rows: 80% 20%;
     grid-template-areas: 
@@ -56,53 +56,56 @@ body {
     'tx tx';
     align-items: center;
     justify-items: end;
-}
-
-.image {
-    width:100%;
-    height:100%;
-    grid-area: img;
-    background-color: black;
-    z-index: 3;
-    border-radius: 20px;
-}
-.button {
-    position:relative;
-    grid-area: tx;
-    width: 50%;
-    height: 50%;
-    background-color: var(--turquoise);
-    margin-right: 10%;
-    border-radius: 10px;
-    border: 1px solid var(--white);
-    text-align: center;
-    align-content: center;
-    z-index: 3;
-}
-
-.button::after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-    inset: -0.3rem;
-    content: "";
-    filter: blur(.5rem);
-    border-radius: 10px;
-    border: 4px solid var(--white)
-}
     
-.card::before {
-    position: absolute;
-    height: 100%; 
-    width: 100%;
-    z-index: 0;
-    inset: -5%;
-    content: "";
-    filter: blur(1rem);
-    border-radius: 20px;
-    border: 4px solid var(--turquoise)
+    
+    .image {
+        width:100%;
+        height:100%;
+        grid-area: img;
+        background-color: black;
+        z-index: 3;
+        border-radius: 20px;
+    }
+    
+    ::before {
+        position: absolute;
+        height: 100%; 
+        width: 100%;
+        z-index: -1;
+        inset: -.3rem;
+        content: "";
+        filter: blur(.5rem);
+        border-radius: 20px;
+        border: 1px solid var(--turquoise)
+    }
+    .button {
+        position:relative;
+        grid-area: tx;
+        width: 50%;
+        height: 50%;
+        background-color: var(--turquoise);
+        margin-right: 10%;
+        border-radius: 10px;
+        border: 1px solid var(--white);
+        text-align: center;
+        align-content: center;
+        z-index: 3;
+    }
+    
+    .button::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        inset: -0.3rem;
+        content: "";
+        filter: blur(.5rem);
+        border-radius: 10px;
+        border: 1px solid var(--white)
+    }
+        
 }
+
 
 
 .container {
@@ -121,38 +124,45 @@ body {
     justify-items: center;
 }
 
+div {
+    #sc1 {
+        grid-area: sc1;
+    }
+    
+    #sc2 {
+        grid-area: sc2;
+    }
+    
+    #sc3 {
+        grid-area: sc3;
+    }
+    
+    #sc4 {
+        grid-area: sc4;
+    }
+    
+    .as1 {
+        grid-area: as1;
+    }
+    
+    .as2 {
+        grid-area: as2;
+    }
+    
 
-#sc1 {
-    grid-area: sc1;
-}
-
-#sc2 {
-    grid-area: sc2;
-}
-
-#sc3 {
-    grid-area: sc3;
-}
-
-#sc4 {
-    grid-area: sc4;
-}
-
-.as1 {
-    grid-area: as1;
-}
-.as2 {
-    grid-area: as2;
-}
+}    
 
 .icons {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-right: 25px;
+    gap: 3%;
 }
+
 a {
     text-decoration: none;
     color: var(--white);
 }
-
+/* Reklamer att ha med: gambling, free robux, 
+   crypto och raid: shadow legends */
