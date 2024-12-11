@@ -20,6 +20,9 @@ body {
     background-image: url(/img/dark-honeycomb.png);
     font-family: Noto Sans;
     color: var(--white);
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .topbar {
@@ -105,7 +108,7 @@ body {
 .container {
     height: 1200px;
     display: grid;
-    width: 100%;
+    width: 97vw;;
     grid-template-columns: 1fr 33% 33% 1fr;
     grid-template-rows: 75px 400px 400px 1fr;
     grid-template-areas: 
@@ -169,6 +172,7 @@ footer {
 
 aside > img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .link {
@@ -215,4 +219,68 @@ aside > img {
     scale: 1.05;
     background-color: var(--turquoise);
 
+}
+
+
+#account {
+    margin-left: 1rem;
+}
+
+#friends {
+    margin-left: 1rem;
+}
+
+.people {
+    display: grid;
+    width: 97vw;
+    height: 1500px;
+    grid-template-rows: 75px 250px 250px 250px 1fr;
+    grid-template-columns: 1fr 20% 20% 20% 20% 1fr;
+    grid-template-areas: 
+    'hed hed hed hed hed hed'
+    'si1 pr1 pr2 pr3 pr4 si2'
+    'si1 pr5 pr6 pr7 pr8 si2'
+    'si1 pr9 pr10 pr11 pr12 si2';
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+
+#pr1 {
+grid-area: pr1;
+}
+
+#pr2 {
+grid-area: pr2;
+}
+
+#pr3 {
+grid-area: pr3;
+}
+#pr4 {
+grid-area: pr4;
+}
+#pr5 {
+grid-area: pr5;
+}
+#pr6 {
+grid-area: pr6;
+}
+#pr7 {
+grid-area: pr7;
+}
+#pr8 {
+grid-area: pr8;
+}
+#pr9 {
+grid-area: pr9;
+}
+#pr10 {
+grid-area: pr10;
+}
+#pr11 {
+grid-area: pr11;
+}
+#pr12 {
+    grid-area: pr12;
 }
