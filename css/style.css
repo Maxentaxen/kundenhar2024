@@ -6,17 +6,6 @@
     --lightblue: #27efc7;   
 }
 
-h1 {
-    font-size: 34px;
-}
-
-h2 {
-    font-size: 21px;
-}
-
-p {
-    font-size: 13px;
-}
 
 body {
     background-image: url(/img/dark-honeycomb.png);
