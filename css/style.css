@@ -3,22 +3,24 @@
     --black: #202c39;
     --white: #f2f4f3;
     --gray: #37485d;
-    -lightblue: #27efc7;   
+    --lightblue: #27efc7;   
 }
+
 h1 {
-    font-size: 34;
+    font-size: 34px;
 }
 
 h2 {
-    font-size: 21;
+    font-size: 21px;
 }
 
 p {
-    font-size: 13;
+    font-size: 13px;
 }
+
 body {
     background-image: url(/img/dark-honeycomb.png);
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     color: var(--white);
     margin: 0;
     display: flex;
@@ -46,6 +48,8 @@ body {
     border-radius: 20%;
 }
 
+
+/* index.html */
 .card {
     position: relative;
     width: 100%;
@@ -86,6 +90,7 @@ body {
     border-radius: 20px;
     border: 3px solid var(--turquoise)
 }
+
 .button {
     position:relative;
     grid-area: tx;
@@ -159,8 +164,6 @@ a {
     text-decoration: none;
     color: var(--white);
 }
-/* Reklamer att ha med: gambling, free robux, 
-   crypto och raid: shadow legends */
 
 
 footer {
@@ -181,6 +184,8 @@ aside > img {
     height: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -189,7 +194,7 @@ aside > img {
     background-color: var(--white);
     border-radius: inherit;
     margin: 1rem;
-    color: grey;
+    color: #404040;
     overflow-y: scroll;
     scrollbar-width: none;
     padding: 1rem;
@@ -209,7 +214,7 @@ aside > img {
     background-color: var(--white);
     border-radius: 20px;
     margin: 1rem;
-    color: grey;
+    color: #404040;
     overflow-y: scroll;
     scrollbar-width: none;
     padding: 1rem;
@@ -230,11 +235,14 @@ aside > img {
     margin-left: 1rem;
 }
 
+
+/* People.html*/
+
 .people {
     display: grid;
     width: 97vw;
     height: 1500px;
-    grid-template-rows: 75px 300px 300px 300px 1fr;
+    grid-template-rows: 75px 350px 350px 350px 1fr;
     grid-template-columns: 1fr 20% 20% 20% 20% 1fr;
     grid-template-areas: 
     'hed hed hed hed hed hed'
@@ -247,15 +255,12 @@ aside > img {
 
 
 
-
 #pr1 {
 grid-area: pr1;
 }
-
 #pr2 {
 grid-area: pr2;
 }
-
 #pr3 {
 grid-area: pr3;
 }
@@ -286,3 +291,63 @@ grid-area: pr11;
 #pr12 {
     grid-area: pr12;
 }
+
+.description {
+    height: 60%;
+    background-color: var(--white);
+    border-radius: 20px;
+    margin: 1rem;
+    color: #404040;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 1rem;
+}
+
+
+
+
+/*Om-oss.html*/
+
+.about-grid {
+    width: 97vw;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 30% 30% 1fr;
+    grid-template-rows: 75px 400px 400px 1fr;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'a1 s1 s2 a2'
+    'a1 s1 s2 a2'
+    'ft ft ft ft';
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+#topbar-about {
+    grid-area: hd;
+}
+
+
+.about1 {
+    grid-area: s1;
+    height: 95%;
+}
+
+.about1Inside {
+    height: 90%;
+    margin-left: 10px;
+}
+
+.about2 {
+    grid-area: s2;
+    height: 95%;
+}
+
+.about2Inside {
+    height: 90%;
+}
+
+.aboutfoot {
+    grid-area: ft;
+}
+
